@@ -1,5 +1,5 @@
 with open('src/assets/template.html') as file:
-    template = ''.join(line.strip() for line in file.readlines())
+    template = ''.join(file.readlines())
 
 index = template
 
