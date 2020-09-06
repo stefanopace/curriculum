@@ -1,5 +1,6 @@
 from os import listdir
 from os.path import isfile, join
+import re
 
 def indentation_level(line):
     level = 0
@@ -9,7 +10,6 @@ def indentation_level(line):
         else:
             break
     return level
-
 
 content_path = 'src/content/'
 content_filenames = [f for f in listdir(content_path) if isfile(join(content_path, f))]
@@ -44,7 +44,13 @@ for content_filename in content_filenames:
     html.append('</div><br>')
     template = template.replace('%'+content_filename+'%', ''.join(html))
 
-index = template
+index = ''.join([line.strip() for line in template.split('\n')])
+index = re.sub('  +','',index)
+
+with open('src/head') as head_file:
+    head = ''.join(head_file.readlines())
+
+index = index.replace('$head$', '<pre>'+head+'</pre><br>')
 
 with open('build/curriculum/index.html', 'w') as builded:
     builded.write(index)
