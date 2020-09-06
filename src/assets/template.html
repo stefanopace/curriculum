@@ -10,54 +10,59 @@
     </head>
     <body>
         <style>
-            body {
-                font-family: monospace;
+            colors {
+                color: #4b2791;
+                color: #ff3bab;
+                color: #68ea7d;
+                color: #fea466;
+                color: #18eef0;
+                color: #9840ae;
+                color: #17bdaf;
+                color: #effafe;
             }
-            h2, strong{
+            body {
+                font-size: 13px;
+                font-family: "Courier New", Courier, monospace;
+                background-color: black;
+                color: #f3e5f4;
+            }
+            section{
+                max-width: 80ch;
+                margin: 0 auto;
+                border-left: 1px solid #17bdaf;
+                border-right: 1px solid #17bdaf;
+                background-color: #040a1a;
+                padding: 0 1ch;
+            }
+            b {
                 font-weight: bold;
+                color: #fea466;
+            }
+            .fucsia {
+                color: #ff3bab;
+            }
+            a {
+                color: #68ea7d;
+            }
+            a:visited {
+                color: #17bdaf;
+            }
+            div > div{
+                padding-left: 4ch;
             }
         </style>
-        <header></header>
         <section>
-            <div>
-                <h2>Informazioni personali:</h2>
-                <pre>
-    nome: Stefano Pace
-    email: <a href="mailto:stefanopace01@gmail.com">stefanopace01@gmail.com</a>
-                </pre>
-            </div>
-            <div>
-                <h2>Istruzione</h2>
-                <pre>
-    <strong>Diploma di Geometra:</strong>
-        con votazione: 92 / 100
-        ITEF | Isernia(IS) | 2005 - 2010
-
-    <strong>Laurea triennale in Informatica</strong>
-        con votazione 106 / 110
-        Titolo della tesi: Progettazione, sviluppo e testing di una metodologia per il riconoscimento di microparticelle presenti in immagini volumetriche di tessuti legnosi.
-        UNIMOL | Pesche(IS) | 2012 - 2016
-                </pre>
-            </div>
-            <div>
-                <h2>Esperienze Lavorative:</h2>
-                <pre>
-    <strong>Full Stack Developer</strong> presso <strong>Bakeca.it</strong>
-        Torino(TO) | 01/10/2018 - in corso
-
-    <strong>Application Analyst</strong> presso <strong>Accenture Technology</strong>
-        Torino(TO) | 02/07/2018 - 13/09/2018
-                </pre>
-            </div>
-            <div>
-                <h2>Personalità:</h2>
-                <pre>
-    Socievole e aperto a nuove sfide, mi piace lavorare in team e sono sempre disposto a dare aiuto a chi ne ha bisogno.
-    Rivaluto senza problemi le mie convinzioni se chi ho di fronte ha valide argomentazioni. 
-    Mi appassiono facilmente ai miei obiettivi e imparo in fretta.
-                </pre>
-            </div>
+            <pre>
+ ____  _        __                     ____                
+/ ___|| |_ ___ / _| __ _ _ __   ___   |  _ \ __ _  ___ ___ 
+\___ \| __/ _ \ |_ / _` | '_ \ / _ \  | |_) / _` |/ __/ _ \
+ ___) | ||  __/  _| (_| | | | | (_) | |  __/ (_| | (_|  __/
+|____/ \__\___|_|  \__,_|_| |_|\___/  |_|   \__,_|\___\___|
+            </pre>
+            %informazioni_personali%
+            %istruzione%
+            %esperienze_lavorative%
+            %personalita%
         </section>
-        <footer></footer>
     </body>
 </html>
