@@ -1,6 +1,17 @@
 Esperienze Lavorative:
     <b>Full Stack Developer</b> presso <b>Bakeca.it</b>
         Torino(TO) | 01/10/2018 - in corso
+
+        <b>Attività svolte:</b>
+        - Migrazione della codebase da php5.6 a php7.4
+        - Introduzione di un sistema di log centralizzato con stack ELK
+        - Importanti lavori di refactoring che hanno permesso l'introduzione di nuove feature
+        - Introduzione delle pagine del sito in formato amp
+        - Introduzione del framework di frontend VueJs
+        - Introduzione di un sistema di integrazione automatica del codice con Jenkins/Bitbucket
+        - Migrazione del sistema di versionamento e procedure di deploy da Svn a Git
+        - Gestione delle problematiche comuni ai siti ad alto traffico
+        - Condivisione con il team di temi come l'architettura esagonale, refactoring e test automatici
     
     <b>Application Analyst</b> presso <b>Accenture Technology</b>
         Torino(TO) | 02/07/2018 - 13/09/2018
